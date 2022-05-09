@@ -7,6 +7,7 @@ import UnlimitScroll from '../../components/UnlimitScroll';
 import SkeletonLoading from '../../components/SkeletonLoading';
 import Calendar from '../../components/Calendar';
 import SelectBox from '../../components/SelectBox';
+import ModalWithPortal from '../../components/ModalWithPortal';
 
 function Layout() {
   const [nowShow, setNowShow] = useState<number>(0);
@@ -21,6 +22,8 @@ function Layout() {
         return <Calendar />;
       case 3:
         return <SelectBox />;
+      case 4:
+        return <ModalWithPortal />;
       default:
         return <div></div>;
     }
